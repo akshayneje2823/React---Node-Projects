@@ -1,0 +1,51 @@
+.container {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    width: auto;
+    position: relative;
+}
+
+input {
+    padding: 5px;
+    border-radius: 7px;
+    width: 150px;
+    margin: 10px;
+}
+
+button {
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.data {
+    margin-top: 20px;
+    height: 170px;
+    width: auto;
+    background-color: rgb(241, 237, 233);
+    border: 1px solid ;
+    border-radius: 10px;
+}
+.item1{
+    margin-left: 8px;
+    margin-top: 5px;
+}
+.time{
+    margin-left: 8px;
+    margin-top: -10px;
+    font-weight: 200;
+    font-size: 200;
+}
+.item2{
+    margin-left: 8px;
+}
+.Weather-data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.side-by-side{
+    display: inline-block;
+    margin: 10px;
+}
