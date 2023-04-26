@@ -73,6 +73,17 @@ const Avatar = styled.img`
   border-radius:50%;
   background-color:#999
 `
+const Logo = styled.div`
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: bold;
+    margin-bottom: 25px;
+`;
+
+const IMG = styled.img`
+    height: 25px;
+`
 
 const Navbar = () => {
 
@@ -80,16 +91,18 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [q, setQ] = useState('');
 
-  const navigate =useNavigate()
+  const navigate = useNavigate()
 
   return (
     <>
 
       <Container>
         <Wrapper>
+          {/* Add Here youtube icon */}
+    
           <Search>
             <Input placeholder='Search' onChange={(e) => setQ(e.target.value)} />
-            <SearchOutlinedIcon onClick={()=> navigate(`/search?q=${q}`)} />
+            <SearchOutlinedIcon onClick={() => navigate(`/search?q=${q}`)} />
           </Search>
           {
             currentUser ?
